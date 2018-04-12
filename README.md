@@ -2,4 +2,4 @@
 
 To-do boards with saving data in localstorage.
 
-__[Live demo](https://hackernews-react-clone.firebaseapp.com)__
+__[Live demo](https://to-do-boards.firebaseapp.com)__

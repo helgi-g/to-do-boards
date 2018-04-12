@@ -12,11 +12,11 @@ const composeEnhancers =
 const enhancer = composeEnhancers(applyMiddleware(getId))
 
 const store = createStore(reducer,
-  (localStorage['trello-clone']) ? JSON.parse(localStorage['trello-clone']) : {},
+  (localStorage['to-do-boards']) ? JSON.parse(localStorage['to-do-boards']) : {},
   enhancer)
 
 store.subscribe(() => {
-  localStorage['trello-clone'] = JSON.stringify(store.getState())
+  localStorage['to-do-boards'] = JSON.stringify(store.getState())
 })
 
 if (module.hot) {
